@@ -1,0 +1,196 @@
+/*debut header*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+    overflow-x: hidden;
+}
+@import url(https://db.onlinewebfonts.com/c/f2a118fd61847e5119a2f0befffa1e5e?family=Supernatural+Knight);
+body{
+    font-size: 1.2em;
+    background-color: #C5C5C5;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23c09e9e' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23bc7676' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23b74f4f' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%23b32727' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23AE0000' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+    scroll-behavior: smooth;
+    
+}
+header{   
+    height: 75px;
+    width: 100%;
+    overflow-y: hidden;
+    background-color: #C5C5C5;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23c09e9e' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23bc7676' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23b74f4f' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%23b32727' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23AE0000' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+}
+.navbar{
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 10px;
+}
+.nav-menu{
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    top: 75px;
+    width: 400px;
+    backdrop-filter: blur(1px);
+    background-color: rgba(255, 255, 255, 0.512);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.nav-item{
+    list-style-type: none;
+    padding: 0 10px 0 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;  
+}
+.home-link{
+    text-decoration: none;
+    font-size: 1.3em;
+    color: black;
+} 
+.lucifer-logo{
+    display: block;
+    height: 60px;
+    width: auto; 
+    margin-left: auto;
+    margin-right: auto;
+}
+.icon, .btn{
+    display: block;
+    padding: 10px;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+.icon{
+    cursor: pointer;
+}
+#btn, .nav-menu{
+    display: none; /*permet de cacher l'input de la navbar (la checkbox cochable)*/
+}
+[id^=btn]:checked + .nav-menu{   /* ^= veulent dire commence par suivi de btn pour aller chercher tout les id commancant par btn checked pour dire que lorsqu'il est cocher ont applique a l'ul display block*/
+    display: block;
+    
+}
+/*fin header*/
+
+/*debut body*/
+.name{
+    text-align: center;
+}
+.pic{
+    padding-top: 50px;
+    padding-left: 50px;
+    max-width: 300px;
+    height: auto;
+    max-height: 350px;
+    float: left;
+}
+h2{
+    padding-top: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: "Supernatural Knight";
+    size: 2em;
+    color: rgb(141, 0, 0);
+}
+h3{
+    padding-left: 15px;
+    font-family: "Supernatural Knight";
+    size: 1.5em;
+    color: rgb(141, 0, 0);
+}
+.place-date{
+    font: bold italic 0.8em serif;
+    padding: 15px;
+}
+.group{
+    backdrop-filter: blur(1px);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 95%;
+    margin-right: auto;
+    margin-left: auto;
+}
+#actu{  
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: justify;
+    font-family: "Supernatural Knight";
+}
+.espace{
+    background-color: rgba(255, 255, 255, 0.392);
+    height: 20px;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.realisation{
+    padding-bottom: 100px;
+}
+.reseaux{
+    display: flex;
+    justify-content: space-around;
+}
+.logo-reseaux{
+    width: 25px;
+    height: auto;
+}
+/*fin body*/
+
+/*   \/ Bouton haut de page \/  */
+.top-f{
+    position: fixed;
+    z-index: 90;
+    width: 40px;
+    height: auto;
+    right: 20px;
+    bottom: 20px;
+}
+.top-f:hover{
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 50%;
+}
+/*   /\bouton haut de page /\  */
+
+/*debut footer*/
+.top-f{
+    position: fixed;
+    z-index: 90;
+    width: 40px;
+    height: auto;
+    right: 20px;
+    bottom: 20px;
+}
+.top-f:hover{
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 50%;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    text-decoration:underline;
+    color: rgb(141, 0, 0);
+}
+footer{
+    background-color: rgba(255, 255, 255, 0.392);
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px;
+}
+#foot-s{
+    text-align: center;
+}
+#titles-foot{
+    font-size: 1.2em;
+    color: rgb(141, 0, 0);
+}
+#ul-foot{
+    font-size: 1em;
+}
+/*fin footer*/
