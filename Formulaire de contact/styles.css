@@ -1,0 +1,177 @@
+/* debut header*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+    overflow-x: hidden;
+}
+html{
+    height: 100%;
+}
+@import url(https://db.onlinewebfonts.com/c/f2a118fd61847e5119a2f0befffa1e5e?family=Supernatural+Knight);
+body{
+    font-size: 1.2em;
+    background-color: #C5C5C5;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23c09e9e' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23bc7676' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23b74f4f' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%23b32727' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23AE0000' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+    scroll-behavior: smooth;
+    
+}
+header{   
+    height: 75px;
+    width: 100%;
+    overflow-y: hidden;
+    background-color: #C5C5C5;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23c09e9e' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23bc7676' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23b74f4f' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%23b32727' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23AE0000' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+}
+.navbar{
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 10px;
+}
+.nav-menu{
+    display: flex;
+    position: absolute;
+    top: 75px;
+    width: 400px;
+    backdrop-filter: blur(1px);
+    background-color: rgba(255, 255, 255, 0.512);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.nav-item{
+    list-style-type: none;
+    padding: 0 10px 0 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;  
+}
+.home-link{
+    text-decoration: none;
+    font-size: 1.3em;
+    color: black;
+} 
+.lucifer-logo{
+    display: block;
+    height: 60px;
+    width: auto; 
+    margin-left: auto;
+    margin-right: auto;
+}
+.icon, .btn{
+    display: block;
+    padding: 10px;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+.icon{
+    cursor: pointer;
+}
+#btn, .nav-menu{
+    display: none; /*permet de cacher l'input de la navbar (la checkbox cochable)*/
+}
+[id^=btn]:checked + .nav-menu{   /* ^= veulent dire commence par suivi de btn pour aller chercher tout les id commancant par btn checked pour dire que lorsqu'il est cocher ont applique a l'ul display block*/
+    display: block;
+    
+}
+/*fin header*/
+
+/*début body*/
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color:black;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-weight: bold;
+    color:black;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="submit"] {
+    background-color: #ab1414de;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #ab1414de;
+}
+/*fin body*/
+
+/*debut footer*/
+.top-f{
+    position: fixed;
+    z-index: 90;
+    width: 40px;
+    height: auto;
+    right: 20px;
+    bottom: 20px;
+}
+.top-f:hover{
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 50%;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    text-decoration:underline;
+    color: rgb(141, 0, 0);
+}
+footer{
+    background-color: rgba(255, 255, 255, 0.392);
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px;
+    position: absolute; 
+    bottom: 0; 
+    left: 0; 
+    right: 0
+}
+#foot-s{
+    text-align: center;
+}
+#titles-foot{
+    font-size: 1.2em;
+    color: rgb(141, 0, 0);
+}
+#ul-foot{
+    font-size: 1em;
+}
+
+/*fin footer*/
