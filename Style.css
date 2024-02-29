@@ -77,7 +77,7 @@ header{
 #btn, .nav-menu{
     display: none; /*permet de cacher l'input de la navbar (la checkbox cochable)*/
 }
-[id^=btn]:checked + .nav-menu{   /* ^= veulent dire commence par suivi de btn pour aller chercher tout les id commancant par btn checked pour dire que lorsqu'il est cocher ont applique a l'ul display block*/
+[id^=btn]:checked + .nav-menu{   /* ^= veulent dire "commence par" suivi de btn pour aller chercher tout les id commancant par btn checked pour dire que lorsqu'il est cocher ont applique a l'ul display block*/
     display: block;
     
 }
