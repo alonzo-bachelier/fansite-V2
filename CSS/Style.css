@@ -118,6 +118,14 @@ header{
     width: auto;
     height: 300px;
 }
+/*images des acteurs*/
+.amenadiel{
+    width:auto;
+    height: 300px;
+    padding-top: 50px;
+    padding-left: 50px;
+    float: left;
+}
 /*titres*/
 h1{
     padding-top: 50px;
